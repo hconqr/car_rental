@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/img_car.png" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>My Car Rental</title>
   </head>
   <body class="mb-5">
-    <div class="bg-[#F1F3FF] pb-36 mb-5" id="landing">
+    <div
+      class="bg-slate-100 pb-36 mb-5"
+      id="landing"
+      width="100%"
+      height="100%"
+    >
       <!-- NAVBAR -->
       <div class="container mx-auto px-5">
         <div class="py-5 flex justify-between">
           <a href="#landing"><img src="image/logo.png" /></a>
           <div class="max-sm:hidden items-center">
             <div>
-              <a href="#service" class="mr-4">Our Services</a>
-              <a href="#about" class="mr-4">Why Us</a>
-              <a href="#Testimonial" class="mr-4">Testimonial</a>
-              <a href="#FAQ" class="mr-4">FAQ</a>
-              <button class="bg-green-400 px-4 py-1.5 rounded text-white">
+              <a href="#service" class="mr-4 hover:text-blue-700"
+                >Our Services</a
+              >
+              <a href="#about" class="mr-4 hover:text-blue-700">Why Us</a>
+              <a href="#Testimonial" class="mr-4 hover:text-blue-700"
+                >Testimonial
+              </a>
+              <a href="#FAQ" class="mr-4 hover:text-blue-700">FAQ</a>
+              <button
+                class="bg-green-400 hover:bg-blue-700 px-4 py-1.5 rounded text-white"
+              >
                 Register
               </button>
             </div>
@@ -32,7 +45,9 @@
       </div>
 
       <!-- Landing -->
-      <div class="mx-auto mt-10 flex justify-between max-sm:flex-col">
+      <div
+        class="mx-auto mt-10 flex justify-between max-sm:flex-col max-md:flex-col"
+      >
         <div class="pl-10 flex flex-1 flex-col items-start justify-center">
           <h1 class="text-4xl pb-5 font-bold">
             Sewa & Rental Mobil Terbaik di kawasan Jakarta
@@ -42,7 +57,9 @@
             terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
             untuk sewa mobil selama 24 jam.
           </p>
-          <button class="bg-green-400 px-1 py-1 rounded-sm text-white mt-5">
+          <button
+            class="bg-green-400 hover:bg-green-700 px-1 py-1 rounded-sm text-white mt-5"
+          >
             Mulai Sewa Mobil
           </button>
         </div>
@@ -55,7 +72,7 @@
     <!-- Services -->
     <div class="mx-auto flex p-6" id="service">
       <div
-        class="pl-10 flex flex-1 items-center justify-between max-sm:flex-col"
+        class="pl-10 flex flex-1 items-center justify-between max-sm:flex-col max-md:flex-col"
       >
         <div class="mr-10">
           <img src="image/img_service.png" width="auto" height="auto" />
@@ -70,21 +87,49 @@
             kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding,
             meeting, dll.
           </p>
-          <div class="flex flex-1">
-            <div class="mt-2">
-              <img src="image/check.png" width="20%" class="my-3" />
-              <img src="image/check.png" width="20%" class="my-3" />
-              <img src="image/check.png" width="20%" class="my-3" />
-              <img src="image/check.png" width="20%" class="my-3" />
-              <img src="image/check.png" width="20%" class="my-3" />
-            </div>
-            <div class="mt-2">
-              <p class="my-2">Sewa Mobil Dengan Supir di Bali 12 Jam</p>
-              <p class="my-2">Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
-              <p class="my-2">Sewa Mobil Jangka Panjang Bulanan</p>
-              <p class="my-2">Gratis Antar - Jemput Mobil di Bandara</p>
-              <p class="my-2">Layanan Airport Transfer / Drop In Out</p>
-            </div>
+          <div class="flex justify-start items-center gap-5">
+            <ul>
+              <li><img src="image/check.png" width="20px" height="20px" /></li>
+              <li>
+                <img
+                  src="image/check.png"
+                  width="20px"
+                  height="20px"
+                  class="mt-3"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/check.png"
+                  width="20px"
+                  height="20px"
+                  class="mt-3"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/check.png"
+                  width="20px"
+                  height="20px"
+                  class="mt-3"
+                />
+              </li>
+              <li>
+                <img
+                  src="image/check.png"
+                  width="20px"
+                  height="20px"
+                  class="mt-3"
+                />
+              </li>
+            </ul>
+            <ul>
+              <li>Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+              <li class="mt-3">Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+              <li class="mt-3">Sewa Mobil Jangka Panjang Bulanan</li>
+              <li class="mt-3">Gratis Antar - Jemput Mobil di Bandara</li>
+              <li class="mt-3">Layanan Airport Transfer / Drop In Out</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -93,73 +138,73 @@
     <!-- Why Us? -->
     <div class="m-10" id="about">
       <div class="my-12">
-        <div class="font-bold text-2xl flex justify-start">Why Us?</div>
-        <div>Mengapa harus memilih Binar Car</div>
+        <h1 class="font-bold text-2xl flex justify-start">Why Us?</h1>
+        <h2>Mengapa harus memilih Binar Car</h2>
       </div>
-      <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-1">
-        <div class="border-2 rounded-lg p-4">
+      <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-1 max-md:grid-cols-1">
+        <div class="border shadow-2xl rounded-lg p-4">
           <img
             src="image/icon_complete.png"
             width="24px"
             height="24px"
             class="mb-3"
           />
-          <div class="font-bold mb-3">Mobil Lengkap</div>
-          <div>
+          <h2 class="font-bold mb-3">Mobil Lengkap</h2>
+          <p>
             Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
             terawat
-          </div>
+          </p>
         </div>
-        <div class="border-2 rounded-lg p-4">
+        <div class="border shadow-2xl rounded-lg p-4">
           <img
             src="image/icon_price.png"
             width="24px"
             height="24px"
             class="mb-3"
           />
-          <div class="font-bold mb-3">Harga Murah</div>
-          <div>
+          <h2 class="font-bold mb-3">Harga Murah</h2>
+          <p>
             Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
             terawat
-          </div>
+          </p>
         </div>
-        <div class="border-2 rounded-lg p-4">
+        <div class="border shadow-2xl rounded-lg p-4">
           <img
             src="image/icon_24hrs.png"
             width="24px"
             height="24px"
             class="mb-3"
           />
-          <div class="font-bold mb-3">Layanan 24 Jam</div>
-          <div>
+          <h2 class="font-bold mb-3">Layanan 24 Jam</h2>
+          <p>
             Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
             terawat
-          </div>
+          </p>
         </div>
-        <div class="border-2 rounded-lg p-4">
+        <div class="border shadow-2xl rounded-lg p-4">
           <img
             src="image/icon_professional.png"
             width="24px"
             height="24px"
             class="mb-3"
           />
-          <div class="font-bold mb-3">Sopir Profesional</div>
-          <div>
+          <h2 class="font-bold mb-3">Supir Profesional</h2>
+          <p>
             Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan
             terawat
-          </div>
+          </p>
         </div>
       </div>
     </div>
 
     <!-- Testimonial -->
     <div class="mt-5 mx-4" id="Testimonial">
-      <center>
+      <div class="flex flex-col justify-center items-center">
         <div class="font-bold text-2xl mb-5">Testimonial</div>
         <p class="mb-5">Berbagai review positif dari para pelanggan kami</p>
-      </center>
-      <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-1">
-        <div class="flex items-center bg-[#F1F3FF] rounded-xl p-10">
+      </div>
+      <div class="grid grid-cols-3 gap-4 max-sm:grid-cols-1 max-md:grid-cols-1">
+        <div class="flex items-center bg-[#F1F3FF] rounded-xl p-10 shadow-2xl">
           <div class="mr-10">
             <img src="image/img_photo.png" width="100px" height="100px" />
           </div>
@@ -169,7 +214,7 @@
             <div>John Dee 32, Bromo</div>
           </div>
         </div>
-        <div class="flex items-center bg-[#F1F3FF] rounded-xl p-10">
+        <div class="flex items-center bg-[#F1F3FF] rounded-xl p-10 shadow-2xl">
           <div class="mr-10">
             <img src="image/img_photo.png" width="100px" height="100px" />
           </div>
@@ -179,7 +224,7 @@
             <div>John Dee 32, Bromo</div>
           </div>
         </div>
-        <div class="flex items-center bg-[#F1F3FF] rounded-xl p-10">
+        <div class="flex items-center bg-[#F1F3FF] rounded-xl p-10 shadow-2xl">
           <div class="mr-10">
             <img src="image/img_photo.png" width="100px" height="100px" />
           </div>
@@ -192,32 +237,34 @@
       </div>
     </div>
 
-    <!-- Oder -->
-    <center>
+    <!-- Order -->
+    <div class="flex justify-center items-center">
       <div
-        class="mt-20 container bg-[#0D28A6] py-10 grid grid-cols-1 rounded-xl"
+        class="flex flex-col justify-center items-center mt-20 container bg-[#0D28A6] py-10 rounded-xl"
       >
-        <div class="text-white">
+        <div class="flex flex-col justify-center items-center text-white">
           <h1 class="font-bold text-4xl mb-5">
             Sewa Mobil di Jakarta Sekarang
           </h1>
-          <p class="text-sm mb-10">
+          <p class="text-sm m-10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div>
-          <button class="bg-green-400 px-4 py-1.5 rounded text-white">
+          <button
+            class="bg-green-500 hover:bg-green-700 px-4 py-1.5 rounded text-white"
+          >
             Mulai Sewa Mobil
           </button>
         </div>
       </div>
-    </center>
+    </div>
 
     <!-- FAQ -->
     <div
       id="FAQ"
-      class="flex flex-1 justify-around mt-28 mx-5 items-center max-sm:flex-col"
+      class="flex flex-1 justify-around mt-28 mx-5 items-center max-sm:flex-col max-md:flex-col"
     >
       <div>
         <div class="font-bold text-2xl mb-5 flex items-start">
@@ -257,13 +304,15 @@
     </div>
 
     <!-- Footer -->
-    <div class="flex flex-1 justify-around mt-52 max-sm:flex-col m-5">
+    <div
+      class="flex flex-1 justify-around mt-52 max-sm:flex-col max-md:justify-center max-md:items-center m-5"
+    >
       <div>
         <div class="mb-4">
-          <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+          <p>Jalan Suroyo</p>
         </div>
         <div class="mb-4">
-          <p>binarcarrental@gmail.com</p>
+          <p>mycarrental@gmail.com</p>
         </div>
         <div class="mb-4">
           <p>081-233-334-808</p>
@@ -271,16 +320,18 @@
       </div>
       <div>
         <div class="mb-4">
-          <p>Our services</p>
+          <a href="#service" class="mr-4 hover:text-blue-700">Our Services</a>
         </div>
         <div class="mb-4">
-          <p>Why Us</p>
+          <a href="#about" class="mr-4 hover:text-blue-700">Why Us</a>
         </div>
         <div class="mb-4">
-          <p>Testimonial</p>
+          <a href="#Testimonial" class="mr-4 hover:text-blue-700"
+            >Testimonial
+          </a>
         </div>
         <div class="mb-4">
-          <p>FAQ</p>
+          <a href="#FAQ" class="mr-4 hover:text-blue-700">FAQ</a>
         </div>
       </div>
       <div>
@@ -307,10 +358,10 @@
       </div>
       <div>
         <div class="mb-4">
-          <p>Copyright Binar 2022</p>
+          <p>&copy; 2024 Hilzi. All rights reserved.</p>
         </div>
         <div>
-          <img src="image/logo.png" alt="" />
+          <a href="#landing"><img src="image/logo.png" /></a>
         </div>
       </div>
     </div>
